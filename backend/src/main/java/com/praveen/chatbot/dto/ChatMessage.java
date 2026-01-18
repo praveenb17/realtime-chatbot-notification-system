@@ -1,18 +1,37 @@
 package com.praveen.chatbot.dto;
 
 public class ChatMessage {
+
+    private String messageId;
     private MessageType type;
     private String fromUser;
     private String toUser;
     private String content;
 
-    public ChatMessage() {}
+    public ChatMessage() {
+    }
 
     public ChatMessage(MessageType type, String fromUser, String toUser, String content) {
         this.type = type;
         this.fromUser = fromUser;
         this.toUser = toUser;
         this.content = content;
+    }
+
+    public ChatMessage(String messageId, MessageType type, String fromUser, String toUser, String content) {
+        this.messageId = messageId;
+        this.type = type;
+        this.fromUser = fromUser;
+        this.toUser = toUser;
+        this.content = content;
+    }
+
+    public String getMessageId() {
+        return messageId;
+    }
+
+    public void setMessageId(String messageId) {
+        this.messageId = messageId;
     }
 
     public MessageType getType() {

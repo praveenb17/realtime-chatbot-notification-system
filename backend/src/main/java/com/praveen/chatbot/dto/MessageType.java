@@ -2,5 +2,8 @@ package com.praveen.chatbot.dto;
 
 public enum MessageType {
     SYSTEM,
-    CHAT
+    REGISTER,
+    CHAT,
+    ACK,
+    ERROR
 }
